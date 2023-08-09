@@ -1,5 +1,6 @@
 import java.awt.*;
 
+// Represents a rectangle in 2D space using the native Canvas class.
 public class Entity extends Canvas {
 
     // Fields
@@ -19,7 +20,7 @@ public class Entity extends Canvas {
      public Entity(int xPos, int yPos, int xDir, int yDir, Dimension widthHeight, Color color) {
         this.xPos = xPos;
         this.yPos = yPos;
-        this.xDir = xDir;
+        this.xDir = xDir; // Used to change the direction of the rect.
         this.yDir = yDir;
         this.width = widthHeight.width;
         this.height = widthHeight.height;
@@ -28,6 +29,7 @@ public class Entity extends Canvas {
     }
 
     // Methods
+    // Draws the object to the screen.
     public void draw(Graphics g) {
         g.setColor(color);
     }

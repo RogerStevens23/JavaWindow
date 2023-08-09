@@ -1,6 +1,7 @@
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
+// Uses the key event class to register keyboard presses.
 public class KeyboardInputs implements KeyListener {
     // Fields
     private SnakeGame game;
